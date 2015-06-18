@@ -38,4 +38,17 @@ export(
 "siber.hull.metrics",
 "standard.ellipse"
 )
-importFrom(hdrcde, coda, MASS, bayesm, mnormt, spatstat)
+
+import(hdrcde)
+import(coda)
+import(MASS)
+import(mnormt)
+importFrom(bayesm, rdirichlet, rwishart, rmultireg)
+importFrom(spatstat, overlap.xypolygon)
+
+
+
+
+
+
+

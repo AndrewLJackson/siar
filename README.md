@@ -6,7 +6,7 @@ Stable Isotope Analysis in R - package
 You can install directly from GitHub if you have the devtools package installed:
 
 	library(devtools)
-	install_github("siar", username = "andrewljackson")
+	install_github("andrewljackson/siar")
 	library(siar)
 	
 ## Acknowledgments
