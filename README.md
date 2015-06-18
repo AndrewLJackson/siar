@@ -1,4 +1,4 @@
-# SIAR
+# SIAR v4.2.1
 Stable Isotope Analysis in R - package
 
 ## Installing SIAR
