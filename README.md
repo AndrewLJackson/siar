@@ -1,7 +1,7 @@
-# siar
+# SIAR
 Stable Isotope Analysis in R - package
 
-## Installing SPELT
+## Installing SIAR
 
 You can install directly from GitHub if you have the devtools package installed:
 
