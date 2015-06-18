@@ -12,7 +12,9 @@ Description: This package takes data on organism isotopes and fits a
         mean. It also includes SiBER metrics. See siardemo() for an
         example. Version 4.1.2 contains bug fixes to allow more than
         isotope numbers other than 2. Version 4.2 fixes a bug that
-        stopped siar working on 64-bit systems
+        stopped siar working on 64-bit systems. Version 4.2.1 fixes a bug in
+        SIBER routines in Linux distirubutions and now siardensityplot()'s
+        main="my awesome graph" argument works.
 License: GPL (>= 2)
 LazyLoad: yes
 Packaged: 2013-04-23 13:40:37 UTC; andrewparnell
