@@ -5,27 +5,17 @@ siardensityplot <- function (dat, probs = c(95, 75, 50),
     lbound = -Inf, ubound = Inf, main="", ...)
 {
 
-#dev.new()
+
 
 n <- ncol(dat)
 
 
-# test
-#probs = c(95, 75, 50)
-#xlabels = NULL
-#type = "boxes"
-#clr = gray((9:1)/10)
-#scl = 1
-#xspc = 0.5
-#prn = FALSE
-#leg = FALSE
-#ct = "mode"
-
     
 # Set up the plot
-if (is.null(ylims)){ylims<-c(min(dat) - 0.1*min(dat), max(dat) + 0.1*(max(dat)))}
+if (is.null(ylims)){ylims<-c(min(dat) - 0.1*min(dat),
+                             max(dat) + 0.1*(max(dat)))}
 
-plot(1,1, xlab = xlab, ylab = ylab, main = paste("","", sep = ""),
+plot(1,1, xlab = xlab, ylab = ylab, main = main,
             xlim = c(1 - xspc, n + xspc),
             ylim = ylims, type = "n",
             xaxt = "n", ...)
@@ -70,7 +60,8 @@ for (j in 1:n) {
 
             }
             if (prn == TRUE) {
-                cat(paste("\t", probs[k], "% lower =", format(max(min(temp2[!is.na(temp2)]),
+                cat(paste("\t", probs[k], "% lower =",
+                          format(max(min(temp2[!is.na(temp2)]),
                   lbound), digits = 3, scientific = FALSE), "upper =",
                   format(min(max(temp2[!is.na(temp2)]), ubound), digits = 3,
                     scientific = FALSE), "\n"))

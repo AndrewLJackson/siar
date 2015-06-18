@@ -4,8 +4,8 @@ bayesMVN <- function(x,y,R=10^4){
 
 Y <- cbind(x,y)
 X <- matrix(1,length(x),1)
-Bbar <- c(0,0)
-A <- 10^-3
+Bbar <- matrix(0, 1, 2)
+A <- matrix(10^-3, 1, 1)
 nu <- 2
 V <- 2*diag(2)
 
