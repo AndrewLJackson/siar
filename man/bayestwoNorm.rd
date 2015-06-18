@@ -3,7 +3,8 @@
 \title{ Bayesian Independent Normal Distributions }
 \description{
   Fit two independent Normal distributions to bivariate data using Bayesian
-   Inference. Uses the function \code{\link{runireg}} to fit the model to the data.
+   Inference. Uses the function \code{\link{runireg}} to fit the model to the
+   data.
 }
 \usage{
 bayestwoNorm(xx,yy,R=10^4)

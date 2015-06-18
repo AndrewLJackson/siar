@@ -3,7 +3,8 @@
 \docType{data}
 \title{ Source (in this case plant) isotope values }
 \description{
-  A 3 column, 4 row matrix containing 4 different plants and their measurements on 2 different isotopes
+  A 3 column, 4 row matrix containing 4 different plants and their measurements
+  on 2 different isotopes
 }
 \usage{data(sourcesdemo)}
 \format{

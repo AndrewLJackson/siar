@@ -1,6 +1,7 @@
 \name{siber.hull.metrics}
 \alias{siber.hull.metrics}
-\title{ The SIBER method for calculating Convex Hull based metrics of niche width}
+\title{ The SIBER method for calculating Convex Hull based metrics of niche
+width}
 \description{
   Takes bivariate isotope data in x and y with a grouping variable and returns
   a list that contains the posterior distribution of the 6 niche width 

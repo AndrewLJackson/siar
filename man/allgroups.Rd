@@ -3,10 +3,14 @@
 \docType{data}
 \title{ The entire set of Geese isotope data }
 \description{
-  A 5 column matrix containing isotopic estimates for 251 geese collected at 8 different time points. 
-  The first column indicates the time point group, the second and third are d15N (Nitrogen) and d13C 
-  (Carbon) isotopic values for the Geese plasma, the third and fourth are d15N and d13C values for 
-  the Geese cells. Note that these are raw values; they have not undergone fractionation correction.  
+  A 5 column matrix containing isotopic estimates for 251 geese collected at 8
+  different time points. 
+  The first column indicates the time point group, the second and third are 
+  d15N (Nitrogen) and d13C 
+  (Carbon) isotopic values for the Geese plasma, the third and fourth are 
+  d15N and d13C values for 
+  the Geese cells. Note that these are raw values; they have not undergone
+  fractionation correction.  
 }
 \usage{data(allgroups)}
 \format{

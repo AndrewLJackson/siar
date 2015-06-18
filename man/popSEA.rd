@@ -9,7 +9,8 @@
 popSEA(sigma)
 }
 \arguments{
-  \item{sigma}{ A 2x2 matrix defining the correlation structure of bivariate data.}
+  \item{sigma}{A 2x2 matrix defining the correlation structure of bivariate 
+  data.}
 
 }
 

@@ -3,7 +3,8 @@
 \docType{data}
 \title{ A multi-group version of the geese plasma data}
 \description{
-  A 3 column, 251 row matrix which contains the isotopic plasma values of 251 geese over 2 isotopes
+  A 3 column, 251 row matrix which contains the isotopic plasma values of 251
+  geese over 2 isotopes
 }
 \usage{data(geese2demo)}
 \format{

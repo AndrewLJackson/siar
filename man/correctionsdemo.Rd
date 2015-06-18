@@ -4,7 +4,8 @@
 \title{ Fractionation correction values for the geese data}
 \description{
   A 5 column, 4 row matrix containing the mean and standard deviation
-  of the correction values for each of the 2 isotopes used for each different source
+  of the correction values for each of the 2 isotopes used for each different
+  source
 }
 \usage{data(correctionsdemo)}
 \format{

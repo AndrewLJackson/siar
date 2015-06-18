@@ -3,7 +3,8 @@
 \title{Bayesian MVN}
 \description{
   Fit a Multivariate Normal distribution to bivariate data using Bayesian
-   Inference. Uses the function \code{\link{rmultireg}} to fit the model to the data.
+   Inference. Uses the function \code{\link{rmultireg}} to fit the model to 
+   the data.
 }
 \usage{
 bayesMVN(x,y,R=10^4)

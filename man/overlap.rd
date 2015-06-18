@@ -9,10 +9,10 @@
   there is no excessive discretising of the elliptical shape). As a result of 
   this process, you will inevitably underestimate the true ellipse areas and 
   hence their overlap (although this bias is likely to be inconsequential) if 
-  a suitable fine scale is chosen for the step size. There is no single rule for 
+  a suitable fine scale is chosen for the step size. There is no single rule for
   making this choice as it depends on the angle and shape of the ellipse but a 
   step-size of 1 should be more than sufficient in most cases (N.B. the default 
-  steps=5). The ellipses calculated are the small sample size corrected standard 
+  steps=5). The ellipses calculated are the small sample size corrected standard
   ellipses.
 }
 \usage{

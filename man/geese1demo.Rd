@@ -3,7 +3,8 @@
 \docType{data}
 \title{ A single group of the geese data }
 \description{
-  A 2 column, 9 row matrix containing the plasma data for the first group of geese 
+  A 2 column, 9 row matrix containing the plasma data for the first group of
+  geese 
 }
 \usage{data(geese1demo)}
 \format{

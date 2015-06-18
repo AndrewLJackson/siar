@@ -30,14 +30,18 @@ standard.ellipse(x,y,confs=NULL,steps=5)
   \item{yCEA}{y coordinates of the confidence ellipses.}
   \item{xSEA}{x coordinates of the standard ellipse.}
   \item{ySEA}{y coordinates of the standard ellipse.}
-  \item{xSEAc}{x coordinates of the small sample size corrected standard ellipse.}
-  \item{ySEAc}{y coordinates of the small sample size corrected standard ellipse.}
+  \item{xSEAc}{x coordinates of the small sample size corrected standard 
+  ellipse.}
+  \item{ySEAc}{y coordinates of the small sample size corrected standard 
+  ellipse.}
   \item{eccentricity}{Eccentricity of the ellipse}
   \item{a}{The length of the semi-major axis a}
   \item{b}{The length of the semi-minor axis a}
   \item{r}{The correlation coefficient of the data}
-  \item{ac}{The length of the semi-major axis a based on the small sample size correction.}
-  \item{bc}{The length of the semi-minor axis b based on the small sample size correction.}
+  \item{ac}{The length of the semi-major axis a based on the small sample size
+  correction.}
+  \item{bc}{The length of the semi-minor axis b based on the small sample size
+  correction.}
 }
 
 

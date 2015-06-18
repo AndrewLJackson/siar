@@ -8,8 +8,10 @@
 siarmatrixplot(siardata, siarversion=0)
 }
 \arguments{
-  \item{siardata}{ A list containing some or all of the following parts: targets, sources, corrections,
-  PATH, TITLE, numgroups, numdata, numsources, numiso, SHOULDRUN, GRAPHSONLY, EXIT, and output. For more details
+  \item{siardata}{ A list containing some or all of the following parts: 
+  targets, sources, corrections,
+  PATH, TITLE, numgroups, numdata, numsources, numiso, SHOULDRUN, GRAPHSONLY,
+  EXIT, and output. For more details
   of these inputs see the \code{\link{siarmenu}} function. }
   \item{siarversion}{ The siar version number.  }
 }

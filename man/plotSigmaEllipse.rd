@@ -9,8 +9,10 @@
 plotSigmaEllipse(m,sigma,steps=5,col="black",lwd=1,lty=2)
 }
 \arguments{
-  \item{m}{ A vector of length 2 containing the centres of the ellipse (i.e. the means of the ellipse).}
-  \item{sigma}{ A 2x2 matrix representing the correlation matrix that defines the ellipse.}
+  \item{m}{ A vector of length 2 containing the centres of the ellipse 
+  (i.e. the means of the ellipse).}
+  \item{sigma}{ A 2x2 matrix representing the correlation matrix that defines
+  the ellipse.}
   \item{steps}{ A visual rendering option that sets the number of step-size and 
   hence resolution of the points used to draw the lines defining the ellipses. 
   The larger the value, the more angular the ellipses will appear.}
@@ -20,7 +22,6 @@ plotSigmaEllipse(m,sigma,steps=5,col="black",lwd=1,lty=2)
   
 
 }
-
 
 
 \author{ Andrew Jackson }
