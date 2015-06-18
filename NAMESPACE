@@ -38,3 +38,4 @@ export(
 "siber.hull.metrics",
 "standard.ellipse"
 )
+importFrom(hdrcde, coda, MASS, bayesm, mnormt, spatstat)
