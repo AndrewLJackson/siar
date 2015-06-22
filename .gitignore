@@ -1,0 +1,15 @@
+# Rstudio files
+*.Rproj
+*.Rproj.user
+
+
+# R files
+*.Rhistory
+*.Rapp.history
+*.RData
+*.Rproj.user
+<<<<<<< HEAD
+.Rproj.user
+
+# directories
+/plots
