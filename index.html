@@ -39,7 +39,7 @@
         </div>
 
         <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to SIAR.</h3>
+<a id="welcome-to-siar" class="anchor" href="#welcome-to-siar" aria-hidden="true"><span class="octicon octicon-link"></span></a>The SIAR Package</h3>
 
 <p>SIAR is an R package that is based around two main Bayesian statistical methods commonly employed in stable isotope ecology: a mixing model for determining the proportional contribution of sources to a mixture (e.g. proportion of food in a consumer's diet); and quantitative tools for comparing dispersion in isotope-space.</p>
 
@@ -49,14 +49,34 @@
 
 
 <h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a id="siar-intro" class="anchor" href="#siar-intro"><span class="octicon octicon-link"></span></a>SIAR - the mixing model</h3>
+<p>The mixing model component of SIAR uses <a href="http://en.wikipedia.org/wiki/Bayesian_statistics">Bayesian Inference</a> to solve for the most likely set of dietary proportions given the isotopic ratios in a set of possible food sources and a set of consumers. The model is similar in principle to <a href="http://www.epa.gov/naaujydh/pages/models/stableIsotopes/isosource/isosource.htm">IsoSource</a> (Phillips & Gregg 2003) but allows all sources of uncertainty such as in the sources or trophic fractionation values to be propagated through the model to return a true probability distribution of estimated dietary proportions. Previously it was necessary to ignore variation and uncertainty and work only with mean estimates of isotope ratios.</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>Additionally, SIAR will take account of a grouping structure and directly compare the estimated diets between groups of individuals. These groups could represent multiple observations on the same individual, sub-populations or entire species.</p>
+
+
+<p>The maths underlying SIAR can be found published in Jackson et al. (2009) and Moore and Semmens (2008). Work is on-going to add further functionality to this model with the aim being to develop a complete analysis suite for isotope ecology.</p>
+
+<h4>Podcasts Tutorials</h4>
+<ol>
+  <li>Importing data for analysis in siar: <a href="Rpodcastsfiles/siar/siar_data_import.mp4" target="_blank">podcast</a></li>
+  <li>Running siar and basic interrogation of results: <a href="Rpodcastsfiles/siar/siar_basic.mp4" target="_blank">podcast</a></li>
+  <li>Matrix plots and posterior correlations: <a href="Rpodcastsfiles/siar/siar matrix plots.mp4" target="_blank">podcast</a></li>
+  <li>Advanced interrogation of results </li>
+</ol>
 
 <h3>
-<a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+  <a id="siber-intro" class="anchor" href="#siber-intro" aria-hidden="true"><span class="octicon octicon-link"></span></a>SIBER - variation within and among groups in isotope-space</h3>
+<p>SIBER is subset of functions within the SIAR package and allow for analysis of analysis of data in isotope-space as opposed to diet-space such as in the mixing model side of siar. The scripts supporting these podcasts can be found here as a zip file. The SIBER functions and routines are currently obtainable within the R package siar, although work is underway to move them to their own standalone, but compatible package.</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<h4>Podcasts Tutorials</h4>
+<ol>
+  <li>Introduction to SIBER: comparisons among communities or among community members? <a href="Rpodcastsfiles/siber/siber_intro.mp4" target="_blank">podcast</a> </li>
+  <li>Using ellipses to compare community members: <a href="Rpodcastsfiles/siber/siber_ellipses.mp4" target="_blank">podcast</a> </li>
+</ol>
+
+
+
 
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
