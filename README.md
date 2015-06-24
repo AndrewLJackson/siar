@@ -1,4 +1,4 @@
-# SIAR v4.2.1
+# SIAR v4.2.2
 Stable Isotope Analysis in R - package
 
 Parnell, A.C., Inger R., Bearhop, S. & Jackson, A.L. 2010. Source partioning using stable isotopes: coping with too much variation. PLoS ONE, 5(3), e9672 . [doi](http://dx.doi.org/10.1371/journal.pone.0009672)
@@ -8,6 +8,11 @@ Version 4.2.1 fixes:
 * siardensityplot()'s main="my awesome graph" argument now works.
 * linewidths in all *.Rd files now within 90 char limit for pdf creation.
 * cleaned up some instances of quartz() calls that are not used in any case.
+
+Version 4.2.2 fixes:
+* bug in call to .C() for the single group of consumer data arising due to 
+dataframe not being automatically coerced to double format. The coersion is now
+as.double(as.matrix(some.data)).
 
 ## Installing SIAR
 
