@@ -81,14 +81,20 @@ function (data, sources, corrections = 0, concdep = 0, iterations = 2e+05,
 #             as.data.frame(concdepdata), as.data.frame(sourcedata),
 #             as.data.frame(correctionsdata), as.data.frame(parameters))
         tempout <- .C("siarmcmcv4", as.integer(numdata), as.integer(numsources),
-                      as.integer(numiso), as.integer(numgroups), as.integer(startgroup),
+                      as.integer(numiso), as.integer(numgroups),
+                      as.integer(startgroup),
                       as.integer(endgroup), as.integer(siardata$iterations),
                       as.integer(siardata$burnin), as.integer(siardata$howmany),
-                      as.integer(siardata$thinby), as.double(prior), as.double(data2),
-                      as.double(concdepdata), as.double(as.matrix(sourcedata)),
-                      as.double(correctionsdata), as.double(parameters))
-        parameters <- matrix(tempout[[16]], ncol = (numsources + numiso) * numgroups,
-                             nrow = (siardata$iterations - siardata$burnin)/siardata$thinby)
+                      as.integer(siardata$thinby), as.double(prior), 
+                      as.double(as.matrix(data2)),
+                      as.double(as.matrix(concdepdata)),
+                      as.double(as.matrix(sourcedata)),
+                      as.double(as.matrix(correctionsdata)),
+                      as.double(parameters))
+        parameters <- matrix(tempout[[16]], 
+                             ncol = (numsources + numiso) * numgroups,
+                             nrow = (siardata$iterations - siardata$burnin) /
+                               siardata$thinby)
         if (numgroups == 1) {
             colnames(parameters) <- c(sourcenames, paste("SD",
                 seq(1, numiso), sep = ""))
@@ -99,7 +105,8 @@ function (data, sources, corrections = 0, concdep = 0, iterations = 2e+05,
                 sep = ""), times = numgroups), sort(rep(seq(1,
                 numgroups), times = numsources + numiso)), sep = "")
         }
-        return(list(targets = data, sources = sources, corrections = corrections,
+        return(list(targets = data, sources = sources, 
+                    corrections = corrections,
             concdep = concdep, PATH = siardata$PATH, TITLE = siardata$TITLE,
             numgroups = tempout[[4]], numdata = tempout[[1]],
             numsources = tempout[[2]], numiso = tempout[[3]],
