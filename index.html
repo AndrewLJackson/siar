@@ -38,59 +38,31 @@
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
 
+<!-- >START OF MAIN CONTENT<-->
         <h3>
 <a id="welcome-to-siar" class="anchor" href="#welcome-to-siar" aria-hidden="true"><span class="octicon octicon-link"></span></a>The SIAR Package</h3>
 
 <p>SIAR is an R package that is based around two main Bayesian statistical methods commonly employed in stable isotope ecology: a mixing model for determining the proportional contribution of sources to a mixture (e.g. proportion of food in a consumer's diet); and quantitative tools for comparing dispersion in isotope-space.</p>
 
-<p>The mixing model component of SIAR is described in Parnell, A.C., Inger R., Bearhop, S. & Jackson, A.L. 2010. Source partioning using stable isotopes: coping with too much variation. <i>PLoS ONE</i>, 5(3), e9672 . <a href="http://dx.doi.org/10.1371/journal.pone.0009672">doi</a></p>
+<p>The mixing model component of SIAR is described in Parnell, A.C., Inger R., Bearhop, S. & Jackson, A.L. 2010. Source partioning using stable isotopes: coping with too much variation. <i>PLoS ONE</i>, 5(3), e9672 . <a href="http://dx.doi.org/10.1371/journal.pone.0009672">doi</a>. <a href="siar-resources.html">Learning resources</a> including podcasts are available for the mixing model component of SIAR.</p>
 
-<p>The tools for comparing variation within and among groups of isotope-space data are described in Jackson, A.L., Parnell, A.C., Inger R., & Bearhop, S. 2011. Comparing isotopic niche widths among and within communities: SIBER – Stable Isotope Bayesian Ellipses in R. <i>Journal of Animal Ecology</i>, 80, 595-602. <a href="http://dx.doi.org/10.1111/j.1365-2656.2011.01806.x">doi</a></p>
+<p>The tools for comparing variation within and among groups of isotope-space data are described in Jackson, A.L., Parnell, A.C., Inger R., & Bearhop, S. 2011. Comparing isotopic niche widths among and within communities: SIBER – Stable Isotope Bayesian Ellipses in R. <i>Journal of Animal Ecology</i>, 80, 595-602. <a href="http://dx.doi.org/10.1111/j.1365-2656.2011.01806.x">doi</a>. <a href="siber-resources.html">Learning resources</a> including podcasts are available for the SIBER component of SIAR.</p>
+
+<p>Development of SIAR as a package is mostly restricted to keeping up to date with changes in R, bug fixes and minor improvements to code. The development of a generalised framework for fitting mixing models incluing random effects and linear covariates has moved to <a href="https://github.com/brianstock/MixSIAR">MixSIAR</a> in collaboration with Jonathan Moore, Donald Phillips, Brice Semmens, <a href="https://github.com/brianstock" class="user-mention">@brianstock</a> and <a href="https://github.com/eric-ward" class="user-mention">@eric-ward</a>. Development of <a href="https://github.com/AndrewLJackson/SIBER-sandbox">SIBER is in the process of moving to a standalone package</a>. </p>
+
+
 
 
 <h3>
-<a id="siar-intro" class="anchor" href="#siar-intro"><span class="octicon octicon-link"></span></a>SIAR - the mixing model</h3>
-<p>The mixing model component of SIAR uses <a href="http://en.wikipedia.org/wiki/Bayesian_statistics">Bayesian Inference</a> to solve for the most likely set of dietary proportions given the isotopic ratios in a set of possible food sources and a set of consumers. The model is similar in principle to <a href="http://www.epa.gov/naaujydh/pages/models/stableIsotopes/isosource/isosource.htm">IsoSource</a> (Phillips & Gregg 2003) but allows all sources of uncertainty such as in the sources or trophic fractionation values to be propagated through the model to return a true probability distribution of estimated dietary proportions. Previously it was necessary to ignore variation and uncertainty and work only with mean estimates of isotope ratios.</p>
-
-<p>Additionally, SIAR will take account of a grouping structure and directly compare the estimated diets between groups of individuals. These groups could represent multiple observations on the same individual, sub-populations or entire species.</p>
-
-
-<p>The maths underlying SIAR can be found published in Jackson et al. (2009) and Moore and Semmens (2008). Work is on-going to add further functionality to this model with the aim being to develop a complete analysis suite for isotope ecology.</p>
-
-<h4>Podcast Tutorials</h4>
-Below is a series of screencast tutorials in which Andrew Jackson talks through various analyses in the mixing model components. The scripts and dataused are available at <a href="https://github.com/AndrewLJackson/SIAR-examples-and-queries">SIAR-examples-and-queries</a>. An extensive workbook <a href="https://github.com/AndrewLJackson/SIAR-examples-and-queries/blob/master/learning-resources/">Siar for Ecologists</a> developed by <a href="http://www.exeter.ac.uk/cornwall/academic_departments/biosciences/research/post-docs/richard-inger.shtml">Richard Inger</a> works through several analyses.
-<ol>
-  <li>Importing data for analysis in siar: <a href="http://www.tcd.ie/Zoology/research/research/theoretical/Rpodcastsfiles/siar/siar_data_import.mp4" target="_blank">podcast</a></li>
-  <li>Running siar and basic interrogation of results: <a href="http://www.tcd.ie/Zoology/research/research/theoretical/Rpodcastsfiles/siar/siar_basic.mp4" target="_blank">podcast</a></li>
-  <li>Matrix plots and posterior correlations: <a href="http://www.tcd.ie/Zoology/research/research/theoretical/Rpodcastsfiles/siar/siar matrix plots.mp4" target="_blank">podcast</a></li>
-  <li>Advanced interrogation of results </li>
-</ol>
-
-<h3>
-  <a id="siber-intro" class="anchor" href="#siber-intro" aria-hidden="true"><span class="octicon octicon-link"></span></a>SIBER - variation within and among groups in isotope-space</h3>
-<p>SIBER is subset of functions within the SIAR package and allow for analysis of analysis of data in isotope-space as opposed to diet-space such as in the mixing model side of siar. The scripts supporting these podcasts can be found here as a zip file. The SIBER functions and routines are currently obtainable within the R package siar, although work is underway to move them to their own standalone, but compatible package.</p>
-
-<h4>Podcast Tutorials</h4>
-Below is a series of screencast tutorials in which Andrew Jackson talks through various analyses in the SIBER components. The scripts and data used are available at <a href="https://github.com/AndrewLJackson/SIAR-examples-and-queries">SIAR-examples-and-queries</a>
-<ol>
-  <li>Introduction to SIBER: comparisons among communities or among community members? <a href="http://www.tcd.ie/Zoology/research/research/theoretical/Rpodcastsfiles/siber/siber_intro.mp4" target="_blank">podcast</a> </li>
-  <li>Using ellipses to compare community members: <a href="http://www.tcd.ie/Zoology/research/research/theoretical/Rpodcastsfiles/siber/siber_ellipses.mp4" target="_blank">podcast</a> </li>
-</ol>
-
-
-
-
-<!-- <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>SIAR was developed by <a href="http://mathsci.ucd.ie/cgi-bin/sms/orp.cgi?nn=parnell_a">Andrew Parnell</a>, <a href="http://www.tcd.ie/www.tcd.ie/Zoology/research/research/theoretical/index.php/andrewjackson.php">Andrew Jackson</a>, <a href="http://www.exeter.ac.uk/esi/people/researchandtechnical/inger/">Richard Inger</a> and <a href="http://biosciences.exeter.ac.uk/staff/index.php?web_id=stuart_bearhop">Stuart Bearhop</a>.</p>
 
 <h3>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>Having trouble with SIAR? Check out the learning resources pages for SIAR and SIBER. Bugs and suggestions should be left as issues on the main <a href="https://github.com/AndrewLJackson/siar">SIAR development page</a>.  or contact <a href="mailto:a.jackson@tcd.ie">Andrew Jackson</a> or <a href="mailto:a.jackson@tcd.ie">Andrew Parnell</a>  and we will try to help you out. 
       </section>
--->
 
     </div>
 
