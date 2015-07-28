@@ -65,9 +65,6 @@ if(any(hdrsummary>5)) {
 
 }
 
-cat("Press <Enter> to continue...")
-readline()
-invisible()
 
 cat("\n")
 cat("Running convergence diagnostics on output. \n")

@@ -41,7 +41,7 @@ for (j in 1:n) {
                       "Mean",format(mean(dat[,j]),digits=3,scientific=F),
                       "Median",format(median(dat[,j]),digits=3,scientific=F),
                       "\n"))
-        }
+        }?
         for (k in 1:length(probs)) {
             temp2 <- temp$hdr[k, ]
             

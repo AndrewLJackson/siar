@@ -60,7 +60,7 @@ function (siardata, siarversion = 0,
     groupseq <- seq(1, siardata$numgroups, by = 1)
     usepars <- siardata$output[, seq(choose2, ncol(siardata$output), 
         by = siardata$numsources + siardata$numiso)]
-    newgraphwindow()
+    #newgraphwindow()
     if (siardata$TITLE != "SIAR data") {
         plot(1, 1, xlab = "Group", ylab = "Proportion", main = paste(siardata$TITLE, 
             " by source: ", sourcenames[choose2], sep = ""), 
@@ -145,9 +145,6 @@ function (siardata, siarversion = 0,
         }
     }
 
-cat("Please maximise this graph before saving or printing. \n")
-cat("Press <Enter> to continue")
-readline()
-invisible()
+
 
 }

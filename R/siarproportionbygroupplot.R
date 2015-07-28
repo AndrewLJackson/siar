@@ -36,7 +36,7 @@ function (siardata, siarversion = 0, probs = c(95, 75, 50), xlabels = NULL,
     groupseq <- seq(1, siardata$numsources, by = 1)
     shift <- siardata$numsources + siardata$numiso
     usepars <- siardata$output[, ((choose2-1)*(shift) + 1) : ((choose2-1)*(shift) + shift - siardata$numiso)]
-    newgraphwindow()
+    #newgraphwindow()
     if (siardata$TITLE != "SIAR data") {
         plot(1, 1, xlab = "Source", ylab = "Proportion", main = paste(siardata$TITLE, 
             " by group: ", groupnames[choose2], sep = ""), 
@@ -114,8 +114,5 @@ function (siardata, siarversion = 0, probs = c(95, 75, 50), xlabels = NULL,
             print("Legends not yet supported for box style graph. Use type=lines with leg=TRUE instead.")
         }
     }
-    cat("Please maximise this graph before saving or printing. \n")
-    cat("Press <Enter> to continue")
-    readline()
-    invisible()
+
 }
