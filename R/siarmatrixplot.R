@@ -4,9 +4,9 @@ function(siardata,siarversion=0) {
 if(siardata$SHOULDRUN==FALSE && siardata$GRAPHSONLY==FALSE) {
     cat("You must load in some data first (via option 1) in order to use \n")
     cat("this feature of the program. \n")
-    cat("Press <Enter> to continue")
-    readline()
-    invisible()
+    #cat("Press <Enter> to continue")
+    #readline()
+    #invisible()
     return(NULL)
 }
 
