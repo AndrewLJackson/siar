@@ -7,9 +7,7 @@
 *.Rhistory
 *.Rapp.history
 *.RData
-*.Rproj.user
-<<<<<<< HEAD
-.Rproj.user
+
 
 # directories
 /plots
@@ -59,4 +57,4 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-.Rproj.user
+
