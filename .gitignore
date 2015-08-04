@@ -8,7 +8,6 @@
 *.Rapp.history
 *.RData
 
-
 # directories
 /plots
 
