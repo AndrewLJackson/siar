@@ -12,7 +12,7 @@ Version 4.2.1 fixes:
 Version 4.2.2 fixes:
 * bug in call to .C() for the single group of consumer data arising due to 
 dataframe not being automatically coerced to double format. The coersion is now
-as.double(as.matrix(some.data)).
+as.double(as.matrix(some.data)). This addresses the message `error: not a matrix`
 
 ## Installing SIAR
 
