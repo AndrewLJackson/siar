@@ -3,7 +3,7 @@ Stable Isotope Analysis in R - package
 
 [![cran version](http://www.r-pkg.org/badges/version/siar)](http://cran.rstudio.com/web/packages/siar) 
 [![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/siar?)](https://github.com/metacran/cranlogs.app)
-[![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/grand-total/siar?color=brightgreen)](https://github.com/metacran/cranlogs.app)
+[![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/grand-total/siar?color=82b4e8)](https://github.com/metacran/cranlogs.app)
 
 Parnell, A.C., Inger R., Bearhop, S. & Jackson, A.L. 2010. Source partioning using stable isotopes: coping with too much variation. PLoS ONE, 5(3), e9672 . [doi](http://dx.doi.org/10.1371/journal.pone.0009672)
 
