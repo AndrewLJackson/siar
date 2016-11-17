@@ -24,7 +24,7 @@ as.double(as.matrix(some.data)). This addresses the message `error: not a matrix
 You can install directly from GitHub if you have the devtools package installed:
 ```R
 	library(devtools)
-	install_github("andrewljackson/siar@v4.2.2", build_vingettes == T)
+	install_github("andrewljackson/siar@v4.2.2", build_vingettes == TRUE)
 	library(siar)
 ```
 ## Tutorials, help and assistance
