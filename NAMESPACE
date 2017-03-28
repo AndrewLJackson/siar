@@ -44,7 +44,7 @@ import(coda)
 import(MASS)
 import(mnormt)
 importFrom(bayesm, rdirichlet, rwishart, rmultireg)
-importFrom(spatstat, overlap.xypolygon)
+importFrom(spatstat.utils, overlap.xypolygon)
 
 
 
