@@ -28,7 +28,7 @@ Version 4.2.1 fixes:
 You can install directly from GitHub if you have the devtools package installed:
 ```R
 	library(devtools)
-	install_github("andrewljackson/siar@master", build_vingettes == TRUE)
+	install_github("andrewljackson/siar@master", build_vingettes = TRUE)
 	library(siar)
 ```
 ## Tutorials, help and assistance
