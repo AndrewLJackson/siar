@@ -1,4 +1,4 @@
-# SIAR v4.2.2.9000
+# SIAR v4.2.3
 Stable Isotope Analysis in R - package
 
 [![cran version](http://www.r-pkg.org/badges/version/siar)](http://cran.rstudio.com/web/packages/siar) 
@@ -7,6 +7,10 @@ Stable Isotope Analysis in R - package
 [![DOI](https://zenodo.org/badge/28399807.svg)](https://zenodo.org/badge/latestdoi/28399807)
 
 Parnell, A.C., Inger R., Bearhop, S. & Jackson, A.L. 2010. Source partioning using stable isotopes: coping with too much variation. PLoS ONE, 5(3), e9672 . [doi](http://dx.doi.org/10.1371/journal.pone.0009672)
+
+Version 4.2.3 20-February-2018
+* bugs from 4.2.2.9000 incorporated.
+* bugs on labelling of credible intervals output by `siarproportionbysourceplot` and `siarproportionbygroupplot` fixed.
 
 Development version 4.2.2.9000 Hotfix 28-March-2017
 * update to to the package `spatstat` broke siar. This is swapped to `spatstat.utils` in a hotfix on the master branch.

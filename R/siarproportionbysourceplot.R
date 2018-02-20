@@ -122,7 +122,7 @@ function (siardata, siarversion = 0,
             }
            
            if(prn==TRUE){
-           cat(paste("\t", probs[k],
+           cat(paste("\t", row.names(temp)[k],
             "% lower =", format(max(min(temp2[!is.na(temp2)]),0),digits=2,scientific=FALSE),
             "upper =",   format(min(max(temp2[!is.na(temp2)]),1),digits=2,scientific=FALSE),"\n"))
            }
