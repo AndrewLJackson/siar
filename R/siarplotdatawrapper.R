@@ -1,6 +1,15 @@
 siarplotdatawrapper <-
 function(siardata, siarversion = 0, grp = NULL, panel = NULL,
-        isos = c(1, 2),leg2 = NULL,legloc='topleft') {
+        isos = c(1, 2),leg2 = NULL,legloc='topleft', color.src=NULL) {
+  if(is.null(color.src)){
+    color20 = c("gray0", "red", "green", "blue", "cyan",
+                "magenta", "yellow", "gray", "purple", "darkorange",
+                "gold", "pink", "gray50", "plum", "red4",
+                "green4", "blue4", "cyan4", "magenta4", "cornsilk")
+    color.src = color20
+  }}else{
+    color.src = color.src}
+
         if (!is.null(panel) & is.null(grp)) {
             warning(cat("WARNING. grp set to ALL and panel set to a value.\n Overriding your panel selection and setting to panel=NULL.\n In order to plot all groups on seperate panels please call\n grp=1:siardata$numgroups and panel=1 or panel=c(r,c)\n to specify number of rows and columns"))
             panel <- NULL
@@ -73,7 +82,7 @@ function(siardata, siarversion = 0, grp = NULL, panel = NULL,
                   1]^2 + siardata$corrections[i, (2 * isoy) +
                   1]^2)^0.5
                 siaraddcross(x = dx, ex = dex, y = dy, ey = dey,
-                  upch = 15, clr = i)
+                  upch = 15, clr = color.src)
             }
         }
         if (!is.null(panel)) {
@@ -104,8 +113,7 @@ function(siardata, siarversion = 0, grp = NULL, panel = NULL,
             legend(legloc, legend = c(as.character(siardata$sources[,
                 1]), datalabs), lty = c(rep(1, nrow(siardata$sources)),
                 rep(-1, length(grp))), pch = c(rep(15, nrow(siardata$sources)),
-                pchseq[grp]), col = c(seq(1, nrow(siardata$sources)),
-                rep("grey50", length(grp))), bty = "n")
+                pchseq[grp]), col = color.src, bty = "n")
         }
         if (leg2 == 2) {
             datalabs <- NULL
@@ -123,7 +131,6 @@ function(siardata, siarversion = 0, grp = NULL, panel = NULL,
             legend(0, 0, legend = c(as.character(siardata$sources[,
                 1]), datalabs), lty = c(rep(1, nrow(siardata$sources)),
                 rep(-1, length(grp))), pch = c(rep(15, nrow(siardata$sources)),
-                pchseq[grp]), col = c(seq(1, nrow(siardata$sources)),
-                rep("grey50", length(grp))), bty = "n")
+                pchseq[grp]), col = color.src, bty = "n")
         }
     }

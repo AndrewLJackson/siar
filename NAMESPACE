@@ -43,6 +43,7 @@ import(hdrcde)
 import(coda)
 import(MASS)
 import(mnormt)
+import(grDevices)
 importFrom(bayesm, rdirichlet, rwishart, rmultireg)
 importFrom(spatstat, overlap.xypolygon)
 
