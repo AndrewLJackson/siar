@@ -82,7 +82,8 @@ function(siardata, siarversion = 0, grp = NULL, panel = NULL,
                   1]^2 + siardata$corrections[i, (2 * isoy) +
                   1]^2)^0.5
                 siaraddcross(x = dx, ex = dex, y = dy, ey = dey,
-                  upch = 15, clr = color.src)
+                  upch = 15, clr = c(seq(1, nrow(siardata$sources)),
+                                     rep(color.src, length(grp))))
             }
         }
         if (!is.null(panel)) {
@@ -113,7 +114,8 @@ function(siardata, siarversion = 0, grp = NULL, panel = NULL,
             legend(legloc, legend = c(as.character(siardata$sources[,
                 1]), datalabs), lty = c(rep(1, nrow(siardata$sources)),
                 rep(-1, length(grp))), pch = c(rep(15, nrow(siardata$sources)),
-                pchseq[grp]), col = color.src, bty = "n")
+                pchseq[grp]), col =  clr = c(seq(1, nrow(siardata$sources)),
+                                             rep(color.src, length(grp))), bty = "n")
         }
         if (leg2 == 2) {
             datalabs <- NULL
@@ -131,6 +133,7 @@ function(siardata, siarversion = 0, grp = NULL, panel = NULL,
             legend(0, 0, legend = c(as.character(siardata$sources[,
                 1]), datalabs), lty = c(rep(1, nrow(siardata$sources)),
                 rep(-1, length(grp))), pch = c(rep(15, nrow(siardata$sources)),
-                pchseq[grp]), col = color.src, bty = "n")
+                pchseq[grp]),  clr = c(seq(1, nrow(siardata$sources)),
+                                       rep(color.src, length(grp))), bty = "n")
         }
     }
