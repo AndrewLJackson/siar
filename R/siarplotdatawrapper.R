@@ -83,7 +83,7 @@ function(siardata, siarversion = 0, grp = NULL, panel = NULL,
                   1]^2)^0.5
                 siaraddcross(x = dx, ex = dex, y = dy, ey = dey,
                   upch = 15, clr = c(seq(1, nrow(siardata$sources)),
-                                     rep(color.src, length(grp))))
+                                     rep(color.src, length(grp)))[i])
             }
         }
         if (!is.null(panel)) {
