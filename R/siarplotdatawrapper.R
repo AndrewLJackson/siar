@@ -114,7 +114,7 @@ function(siardata, siarversion = 0, grp = NULL, panel = NULL,
             legend(legloc, legend = c(as.character(siardata$sources[,
                 1]), datalabs), lty = c(rep(1, nrow(siardata$sources)),
                 rep(-1, length(grp))), pch = c(rep(15, nrow(siardata$sources)),
-                pchseq[grp]), col =  clr = c(seq(1, nrow(siardata$sources)),
+                pchseq[grp]), col =  c(seq(1, nrow(siardata$sources)),
                                              rep(color.src, length(grp))), bty = "n")
         }
         if (leg2 == 2) {
