@@ -82,8 +82,7 @@ function(siardata, siarversion = 0, grp = NULL, panel = NULL,
                   1]^2 + siardata$corrections[i, (2 * isoy) +
                   1]^2)^0.5
                 siaraddcross(x = dx, ex = dex, y = dy, ey = dey,
-                  upch = 15, clr = c(color.src[1:i],
-                                     rep("grey50", length(grp))))
+                  upch = 15, clr = color.src[i])
             }
         }
         if (!is.null(panel)) {
