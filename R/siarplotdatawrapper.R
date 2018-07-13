@@ -7,7 +7,7 @@ function(siardata, siarversion = 0, grp = NULL, panel = NULL,
                 "gold", "pink", "gray50", "plum", "red4",
                 "green4", "blue4", "cyan4", "magenta4", "cornsilk")
     color.src = color20
-  }}else{
+  }else{
     color.src = color.src}
 
         if (!is.null(panel) & is.null(grp)) {
