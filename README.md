@@ -8,6 +8,10 @@ Stable Isotope Analysis in R - package
 
 Parnell, A.C., Inger R., Bearhop, S. & Jackson, A.L. 2010. Source partioning using stable isotopes: coping with too much variation. PLoS ONE, 5(3), e9672 . [doi](http://dx.doi.org/10.1371/journal.pone.0009672)
 
+Development version 4.2.3.9000 Hotfix 19-July-2018
+* add 'color.src' argument (with 20 different colors set as default) to 'siarplotdatawrapper' and 'siarplotdata' functions, while user can set the colors for source items by themselves. 
+* changed the output in 'siarhdrs' function from c("Low 95% hdr","High 95% hdr","mode","mean") to c("Mean", "SD", "2.5%", "5%", "25%", "50%", "75%", "95", "97.5") as default .
+
 Version 4.2.3 20-February-2018
 * bugs from 4.2.2.9000 incorporated.
 * bugs on labelling of credible intervals output by `siarproportionbysourceplot` and `siarproportionbygroupplot` fixed.
@@ -41,7 +45,7 @@ There is a range of materials available for getting started with SIAR with links
 ## Acknowledgments
 Thanks to [Natalie Cooper](https://github.com/nhcooper123) for help with Github installation instructions and general Git advice!
 
-##Publications
+## Publications
 
 Jackson, A.L., Parnell, A.C., Inger R., & Bearhop, S. 2011. Comparing isotopic niche widths among and within communities: SIBER – Stable Isotope Bayesian Ellipses in R. Journal of Animal Ecology, 80, 595-602. [doi](http://dx.doi.org/10.1111/j.1365-2656.2011.01806.x)
 

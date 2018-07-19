@@ -1,9 +1,9 @@
 Package: siar
 Type: Package
 Title: Stable Isotope Analysis in R
-Version: 4.2.3
-Date: 2018-02-20
-Depends: hdrcde, coda, MASS, bayesm, mnormt, spatstat.utils, hdrcde
+Version: 4.2.3.9000
+Date: 2018-07-19
+Depends: hdrcde, coda, MASS, bayesm, mnormt, spatstat.utils
 Author: Andrew Parnell and Andrew Jackson
 Maintainer: Andrew Parnell <Andrew.Parnell@ucd.ie>
 Description: This package takes data on organism isotopes and fits a
