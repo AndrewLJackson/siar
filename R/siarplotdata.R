@@ -1,6 +1,6 @@
 siarplotdata <-
 function (siardata, siarversion = 0, grp = 1:siardata$numgroups,
-    panel = NULL, isos = c(0, 0), leg = 1)
+    panel = NULL, isos = c(0, 0), leg = 1, color.src=NULL)
 {
     
     
@@ -13,11 +13,11 @@ function (siardata, siarversion = 0, grp = 1:siardata$numgroups,
     if (siardata$numiso > 2 & all(isos == 0)) {
         for (i in 1:(siardata$numiso - 1)) {
             for (j in (i + 1):siardata$numiso) {
-                siarplotdatawrapper(siardata, isos = c(i, j),leg2 = leg)
+                siarplotdatawrapper(siardata, isos = c(i, j),leg2 = leg, color.src = color.src)
             }
         }
     }
     else {
-        siarplotdatawrapper(siardata, siarversion, grp, panel, isos, leg2 = leg)
+        siarplotdatawrapper(siardata, siarversion, grp, panel, isos, leg2 = leg, color.src = color.src)
     }
 }
