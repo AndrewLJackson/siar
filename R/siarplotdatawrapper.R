@@ -132,7 +132,7 @@ function(siardata, siarversion = 0, grp = NULL, panel = NULL,
             legend(0, 0, legend = c(as.character(siardata$sources[,
                 1]), datalabs), lty = c(rep(1, nrow(siardata$sources)),
                 rep(-1, length(grp))), pch = c(rep(15, nrow(siardata$sources)),
-                pchseq[grp]),  clr = c(color.src[1:i],
+                pchseq[grp]),  col = c(color.src[1:i],
                                        rep("grey50", length(grp))), bty = "n")
         }
     }
