@@ -17,8 +17,8 @@ if(length(siardata$output)==0) {
 
 cat("Summary information for the output file ... \n")
 
-hdrsummary <- matrix(0,ncol=4,nrow=ncol(siardata$output))
-colnames(hdrsummary) <- c("Mean", "SD", "2.5%", "5%", "25%", "50%", "75%", "95", "97.5")
+hdrsummary <- matrix(0,ncol=9,nrow=ncol(siardata$output))
+colnames(hdrsummary) <- c("Mean", "SD", "2.5%", "5%", "25%", "50%", "75%", "95%", "97.5%")
 if(length(siardata$targets)>0) {
     sourcenames <- as.character(siardata$sources[,1])
     if(siardata$targets[1,1]%%1!=0) {
@@ -39,13 +39,13 @@ for(i in 1:ncol(siardata$output)) {
 
       hdrsummary[i,1] <- mean(siardata$output[,i])
       hdrsummary[i,2] <- sd(siardata$output[,i])
-      hdrsummary[i,3] <- as.numeric(siardata$output[,i], probs = 2.5/100)
-      hdrsummary[i,4] <- as.numeric(siardata$output[,i], probs = 5/100)
-      hdrsummary[i,5] <- as.numeric(siardata$output[,i], probs = 25/100)
-      hdrsummary[i,6] <- as.numeric(siardata$output[,i], probs = 50/100)
-      hdrsummary[i,7] <- as.numeric(siardata$output[,i], probs = 75/100)
-      hdrsummary[i,8] <- as.numeric(siardata$output[,i], probs = 95/100)
-      hdrsummary[i,9] <- as.numeric(siardata$output[,i], probs = 97.5/100)
+      hdrsummary[i,3] <- as.numeric(quantile(siardata$output[,i], probs = 2.5/100))
+      hdrsummary[i,4] <- as.numeric(quantile(siardata$output[,i], probs = 5/100))
+      hdrsummary[i,5] <- as.numeric(quantile(siardata$output[,i], probs = 25/100))
+      hdrsummary[i,6] <- as.numeric(quantile(siardata$output[,i], probs = 50/100))
+      hdrsummary[i,7] <- as.numeric(quantile(siardata$output[,i], probs = 75/100))
+      hdrsummary[i,8] <- as.numeric(quantile(siardata$output[,i], probs = 95/100))
+      hdrsummary[i,9] <- as.numeric(quantile(siardata$output[,i], probs = 97.5/100))
     }
 }
 
