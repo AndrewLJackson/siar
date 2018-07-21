@@ -8,9 +8,10 @@ Stable Isotope Analysis in R - package
 
 Parnell, A.C., Inger R., Bearhop, S. & Jackson, A.L. 2010. Source partioning using stable isotopes: coping with too much variation. PLoS ONE, 5(3), e9672 . [doi](https://doi.org/10.1371/journal.pone.0009672)
 
-Development version 4.2.3.9000 Hotfix 19-July-2018
+Development version 4.2.3.9000 Hotfix 21-July-2018
 * add 'color.src' argument (with 20 different colors set as default) to 'siarplotdatawrapper' and 'siarplotdata' functions, while user can set the colors for source items by themselves. 
-* changed the output in 'siarhdrs' function from c("Low 95% hdr","High 95% hdr","mode","mean") to c("Mean", "SD", "2.5%", "5%", "25%", "50%", "75%", "95", "97.5") as default .
+* changed the output in 'siarhdrs' function from c("Low 95% hdr","High 95% hdr","mode","mean") to c("Mean", "SD", "2.5%", "5%", "25%", "50%", "75%", "95%", "97.5%") as default .
+* add Return value for 'siarhdrs' function. 
 
 Version 4.2.3 20-February-2018
 * bugs from 4.2.2.9000 incorporated.
