@@ -49,7 +49,7 @@ for(i in 1:ncol(siardata$output)) {
     }
 }
 
-print(hdrsummary)
+return(as.data.frame(hdrsummary))
 if(siardata$SIARSOLO==TRUE) cat("Ignore SD columns for siarsolo runs. \n")
 
 if(any(hdrsummary>5)) {

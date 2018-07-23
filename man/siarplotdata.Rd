@@ -6,14 +6,14 @@
 }
 \usage{
 siarplotdata(siardata, siarversion = 0, grp=1:siardata$numgroups,panel=NULL,
-isos=c(0,0),leg=1)
+isos=c(0,0),leg=1,color.src=NULL)
 }
 \details{
   Can be called at any time after running \code{\link{siarloaddata}} or when
   running \code{\link{siarmenu}}
 }
 \arguments{
-  \item{siardata}{ A list containing some or all of the following parts: 
+  \item{siardata}{ A list containing some or all of the following parts:
   targets, sources, corrections,
   PATH, TITLE, numgroups, numdata, numsources, numiso, SHOULDRUN, GRAPHSONLY,
   EXIT, and output. For more details
@@ -23,7 +23,7 @@ isos=c(0,0),leg=1)
   rendered on the graph. Default value NULL draws all groups.
   Groups are identified by their own data marker.}
   \item{panel}{A scalar value that determines if the groups of consumer data are
-  to be drawn on the same graph (default=NULL) or on 
+  to be drawn on the same graph (default=NULL) or on
   seperate panels within a single figure. Number of rows and columns of panels
   can be specified by a 2 element vector. Alternatively,
   giving a single value e.g. panel=1 will cause the program to attempt to fit a
@@ -31,13 +31,15 @@ isos=c(0,0),leg=1)
   \item{isos}{A two element vector containing the reference to each isotope
   combination for the x and y axis to be rendered in teh figure.
   Note, only relevant for datasets contianing >2 isotopes. By default, if there
-  are more than two isotopes, seperate figures will be created for 
+  are more than two isotopes, seperate figures will be created for
   all possible combinations of isotopes.}
   \item{leg}{A scalar determining how the legend is to be created. Default leg=1
   prompts the user to locate the legend on each figure.
   leg = 2, puts the legend in a new figure automatically (useful if you want to
-  omit the legend but still want to retain access to the 
+  omit the legend but still want to retain access to the
   information). leg = 0 omits the legend entirely.}
+  \item{color.src}{An option to set the color for source itmes by users themselves. There are 20 different colors set by default as "color.src = NULL".
+  Notes, the length of 'color.src' should be same as the number of "source items"!}
 }
 \author{ Andrew Parnell and Andrew Jackson}
 \keyword{ programming}
