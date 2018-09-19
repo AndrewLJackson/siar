@@ -1,6 +1,10 @@
 siarsolomultigrouprun <-
 function(siardata) {
 # This function runs the multi group MCMC for siar
+  
+  .Deprecated("mixsiar", package = "MixSIAR", msg = "siar is out of date. 
+              We recommend the package MixSIAR for more complicated analyses, 
+              or simmr for more basic functionality resembling siar.")
 
 if(siardata$SHOULDRUN==FALSE || siardata$GRAPHSONLY ==TRUE) {
     cat("You must load in some data first (via option 1) in order to use this feature of the program. \n")

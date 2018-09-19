@@ -1,7 +1,7 @@
 Package: siar
 Type: Package
 Title: Stable Isotope Analysis in R
-Version: 4.2.3.9000
+Version: 4.2.4
 Date: 2018-07-19
 Depends: hdrcde, coda, MASS, bayesm, mnormt, spatstat.utils
 Author: Andrew Parnell and Andrew Jackson
@@ -15,7 +15,10 @@ Description: This package takes data on organism isotopes and fits a
         stopped siar working on 64-bit systems. Version 4.2.1 fixes a bug in
         SIBER routines in Linux distirubutions and now siardensityplot()'s
         main="my awesome graph" argument works. Version 4.2.2 fixes a bug in
-        SIAR when running it on a single group of data.
+        SIAR when running it on a single group of data. Version 4.2.4 
+        deprecates mixing model functions and points to new packages MixSIAR 
+        and simmr; and deprecates ellipse and hull based approaches pointing to 
+        package SIBER.
 License: GPL (>= 2)
 LazyLoad: yes
 Packaged: 2013-04-23 13:40:37 UTC; andrewparnell

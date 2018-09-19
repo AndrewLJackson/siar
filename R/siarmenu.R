@@ -1,5 +1,9 @@
 siarmenu <-
 function() {
+  
+  .Deprecated("mixsiar", package = "MixSIAR", msg = "siar is out of date. 
+              We recommend the package MixSIAR for more complicated analyses, 
+              or simmr for more basic functionality resembling siar.")
 
 siarversion <-"4.1"
 
