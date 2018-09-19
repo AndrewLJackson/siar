@@ -15,8 +15,8 @@ laymanmetrics(x,y)
 \value{
   \item{dN_range}{Assuming y is delta Nitrogen, then dN_range is the 
   max(delta N} - min(delta N)
-  \item{dC_range}{Assuming x is delta Nitrogen, then dN_range is the 
-  max(delta N} - min(delta N)
+  \item{dC_range}{Assuming x is delta Carbon, then dC_range is the 
+  max(delta C} - min(delta C)
   \item{hull}{Contains the area of the convex hull around the data points
   defined by x and y (hull$TA); the coordinates for plotting of the convex
   hull (hull$xcoords, hull$ycoords); and the index address of the points in

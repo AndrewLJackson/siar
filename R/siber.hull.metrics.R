@@ -1,4 +1,9 @@
 siber.hull.metrics <- function(X,Y,G,R=10^4){
+  
+  .Deprecated("bayesianLayman", package = "SIBER", "All ellipse and convex hull 
+              type analyses in siar are out of date and unsupported. You 
+              should use the new stand alone package SIBER instead.")
+  
 
 reps <- 10^4
 

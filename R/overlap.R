@@ -1,4 +1,10 @@
 overlap <- function (x1,y1,x2,y2,steps=5) {
+  
+  .Deprecated("maxLikOverlap", package = "SIBER", "All ellipse and convex hull 
+              type analyses in siar are out of date and unsupported. You 
+              should use the new stand alone package SIBER instead. See also 
+              the function bayesianOverlap in package SIBER.")
+  
 # calculates the area of overlap between the shapes s1 and s2 which each
 # have dimension dim(n,2) where each column are the x and y coordinates
 # respectively.

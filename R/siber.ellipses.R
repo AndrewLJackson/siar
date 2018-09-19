@@ -1,4 +1,8 @@
 siber.ellipses <- function(x,y,group,R=10^4) {
+  
+  .Deprecated("siberEllipses", package = "SIBER", "All ellipse and convex hull 
+              type analyses in siar are out of date and unsupported. You 
+              should use the new stand alone package SIBER instead.")
 
 
 # now loop through the data and calculate the ellipses

@@ -1,4 +1,8 @@
 standard.ellipse <- function (x,y,confs=NULL,steps=5){
+  
+  .Deprecated("laymanMetrics", package = "SIBER", "All ellipse and convex hull 
+              type analyses in siar are out of date and unsupported. You 
+              should use the new stand alone package SIBER instead.")
 
 
 n <- length(x)
