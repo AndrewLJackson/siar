@@ -1,6 +1,8 @@
 # SIAR v4.2.4.XXXX
 Stable Isotope Analysis in R - package
 
+**_DO NOT USE THIS PACKAGE SIAR!!!!_**
+
 * **IMPORTANT:** SIAR is now defunct (dead, gone, over). 
     * Please use the packages [SIBER](https://github.com/AndrewLJackson/SIBER) for fitting of ellipses and convex hulls.
     * Please use the package [MixSIAR](https://github.com/brianstock/MixSIAR) for fitting mixing models which offers the latest suite of options for including linear covariates and hierarchical random effects among other new developments. You may also use the package [simmr](https://github.com/andrewcparnell/simmr) for fitting simple or lite versions of mixing models.
