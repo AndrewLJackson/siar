@@ -1,5 +1,11 @@
-# SIAR v4.2.3
+# SIAR v4.2.4.XXXX
 Stable Isotope Analysis in R - package
+
+* **IMPORTANT:** SIAR is now deprecated. 
+    * Please use the packages [SIBER](https://github.com/AndrewLJackson/SIBER) for fitting of ellipses and convex hulls.
+    * Please use the package [MixSIAR](https://github.com/brianstock/MixSIAR) for fitting mixing models which offers the latest suite of options for including linear covariates and hierarchical random effects among other new developments. You may also use the package [simmr](https://github.com/andrewcparnell/simmr) for fitting simple or lite versions of mixing models.
+
+
 
 [![cran version](http://www.r-pkg.org/badges/version/siar)](http://cran.rstudio.com/web/packages/siar) 
 [![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/siar?)](https://github.com/metacran/cranlogs.app)
@@ -8,7 +14,12 @@ Stable Isotope Analysis in R - package
 
 Parnell, A.C., Inger R., Bearhop, S. & Jackson, A.L. 2010. Source partioning using stable isotopes: coping with too much variation. PLoS ONE, 5(3), e9672 . [doi](https://doi.org/10.1371/journal.pone.0009672)
 
-Development version 4.2.3.9000 Hotfix 21-July-2018
+Version 4.2.4.XXXXX
+* SIAR is now deprecated. 
+    * Please use the packages [SIBER](https://github.com/AndrewLJackson/SIBER) for fitting of ellipses and convex hulls.
+    * Please use the package [MixSIAR](https://github.com/brianstock/MixSIAR) for fitting mixing models which offers the latest suite of options for including linear covariates and hierarchical random effects among other new developments. You may also use the package [simmr](https://github.com/andrewcparnell/simmr) for fitting simple or lite versions of mixing models.
+
+Version 4.2.4
 * add 'color.src' argument (with 20 different colors set as default) to 'siarplotdatawrapper' and 'siarplotdata' functions, while user can set the colors for source items by themselves. 
 * changed the output in 'siarhdrs' function from c("Low 95% hdr","High 95% hdr","mode","mean") to c("Mean", "SD", "2.5%", "5%", "25%", "50%", "75%", "95%", "97.5%") as default .
 * add Return value for 'siarhdrs' function. 
@@ -17,7 +28,7 @@ Version 4.2.3 20-February-2018
 * bugs from 4.2.2.9000 incorporated.
 * bugs on labelling of credible intervals output by `siarproportionbysourceplot` and `siarproportionbygroupplot` fixed.
 
-Development version 4.2.2.9000 Hotfix 28-March-2017
+Version 4.2.2.9000 Hotfix 28-March-2017
 * update to to the package `spatstat` broke siar. This is swapped to `spatstat.utils` in a hotfix on the master branch.
 
 Version 4.2.2 fixes:
