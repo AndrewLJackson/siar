@@ -1,5 +1,9 @@
 siarloaddata <-
 function(siarversion) {
+  
+  .Defunct("mixsiar", package = "MixSIAR", msg = "SIAR is dead. 
+              We recommend the package MixSIAR for more complicated analyses, 
+           or simmr for more basic functionality resembling siar.")
 
 choices2 <- c("Load data in from files","Load in R objects","Load in previous output")
 title <- "The available options are:"

@@ -2,7 +2,7 @@ siarsolomultigrouprun <-
 function(siardata) {
 # This function runs the multi group MCMC for siar
   
-  .Deprecated("mixsiar", package = "MixSIAR", msg = "siar is out of date. 
+  .Defunct("mixsiar", package = "MixSIAR", msg = "siar is out of date. 
               We recommend the package MixSIAR for more complicated analyses, 
               or simmr for more basic functionality resembling siar.")
 

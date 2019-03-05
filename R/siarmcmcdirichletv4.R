@@ -4,7 +4,7 @@ function (data, sources, corrections = 0, concdep = 0, iterations = 2e+05,
         nrow(sources)), siardata = list(SHOULDRUN = FALSE))
 {
   
-  .Deprecated("mixsiar", package = "MixSIAR", msg = "siar is out of date. 
+  .Defunct("mixsiar", package = "MixSIAR", msg = "SIAR is dead. 
               We recommend the package MixSIAR for more complicated analyses, 
               or simmr for more basic functionality resembling siar.")
   

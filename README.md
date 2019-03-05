@@ -1,13 +1,10 @@
 # SIAR v4.2.4.XXXX
 Stable Isotope Analysis in R - package
 
-* **IMPORTANT:** SIAR is now deprecated. 
+* **IMPORTANT:** SIAR is now defunct (dead, gone, over). 
     * Please use the packages [SIBER](https://github.com/AndrewLJackson/SIBER) for fitting of ellipses and convex hulls.
     * Please use the package [MixSIAR](https://github.com/brianstock/MixSIAR) for fitting mixing models which offers the latest suite of options for including linear covariates and hierarchical random effects among other new developments. You may also use the package [simmr](https://github.com/andrewcparnell/simmr) for fitting simple or lite versions of mixing models.
 
-
-
-[![cran version](http://www.r-pkg.org/badges/version/siar)](http://cran.rstudio.com/web/packages/siar) 
 [![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/siar?)](https://github.com/metacran/cranlogs.app)
 [![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/grand-total/siar?color=82b4e8)](https://github.com/metacran/cranlogs.app)
 [![DOI](https://zenodo.org/badge/28399807.svg)](https://zenodo.org/badge/latestdoi/28399807)
@@ -15,7 +12,7 @@ Stable Isotope Analysis in R - package
 Parnell, A.C., Inger R., Bearhop, S. & Jackson, A.L. 2010. Source partioning using stable isotopes: coping with too much variation. PLoS ONE, 5(3), e9672 . [doi](https://doi.org/10.1371/journal.pone.0009672)
 
 Version 4.2.4.XXXXX
-* SIAR is now deprecated. 
+* SIAR is now defunct. 
     * Please use the packages [SIBER](https://github.com/AndrewLJackson/SIBER) for fitting of ellipses and convex hulls.
     * Please use the package [MixSIAR](https://github.com/brianstock/MixSIAR) for fitting mixing models which offers the latest suite of options for including linear covariates and hierarchical random effects among other new developments. You may also use the package [simmr](https://github.com/andrewcparnell/simmr) for fitting simple or lite versions of mixing models.
 
@@ -45,12 +42,13 @@ Version 4.2.1 fixes:
 
 ## Installing SIAR
 
-You can install directly from GitHub if you have the devtools package installed:
+You can install directly from GitHub if you have the devtools package installed. But you really shouldn't. This package is no longer supported, nor encouraged, and it is only 
 ```R
 	library(devtools)
 	install_github("andrewljackson/siar@master", build_vingettes = TRUE)
 	library(siar)
 ```
+
 ## Tutorials, help and assistance
 There is a range of materials available for getting started with SIAR with links to example files, video podcasts, tutorials etc... available from http://www.tcd.ie/Zoology/research/groups/jackson/projects/siar.php. There are also more files and examples at https://github.com/AndrewLJackson/SIAR-examples-and-queries and i will consolidate these various files into this git repo and/or accompanying git website at some point in the future. Note also that I am currently working on a major update to SIBER which will see it removed from the SIAR package at some point https://github.com/AndrewLJackson/SIBER-sandbox. 
 

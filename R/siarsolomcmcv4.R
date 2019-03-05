@@ -2,7 +2,7 @@ siarsolomcmcv4 <-
 function(data,sources,corrections=0,concdep=0,iterations=200000,burnin=50000,howmany=10000,thinby=15,prior=rep(1,nrow(sources)),siardata=list(SHOULDRUN=FALSE))
 {
 
-  .Deprecated("mixsiar", package = "MixSIAR", msg = "siar is out of date. 
+  .Defunct("mixsiar", package = "MixSIAR", msg = "siar is out of date. 
               We recommend the package MixSIAR for more complicated analyses, 
               or simmr for more basic functionality resembling siar.")
   
